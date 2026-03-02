@@ -1,7 +1,9 @@
-def greet(name):
-    return f"Hello, {name}!"
+def greet(name, excited=False):
+    if not excited:
+        return f"Hello, {name}!"
+    else:
+        return f"Hello, {name}! How are you today?"
 
 if __name__ == "__main__":
     print(greet("World"))
-
-# oogabooga
+    print(greet("Velcriphone", excited=True))
